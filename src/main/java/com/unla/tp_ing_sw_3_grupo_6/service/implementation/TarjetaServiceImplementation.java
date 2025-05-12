@@ -5,9 +5,9 @@ import java.util.List;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.example.ing_sw_3_grupo_6_sube.entity.Tarjeta;
-import com.example.ing_sw_3_grupo_6_sube.repository.TarjetaRepository;
-import com.example.ing_sw_3_grupo_6_sube.service.TarjetaService;
+import com.unla.tp_ing_sw_3_grupo_6.entity.Tarjeta;
+import com.unla.tp_ing_sw_3_grupo_6.repository.TarjetaRepository;
+import com.unla.tp_ing_sw_3_grupo_6.service.TarjetaService;
 
 @Service
 @Transactional(readOnly = true)
@@ -34,7 +34,7 @@ public class TarjetaServiceImplementation implements TarjetaService {
 	public Tarjeta findById(Long id) {
 		return tarjetaRepository.findById(id).orElse(null);
 	}
-	
+
 	@Override
 	public Tarjeta findByCodigo(String codigo) {
 		return tarjetaRepository.findByCodigo(codigo);

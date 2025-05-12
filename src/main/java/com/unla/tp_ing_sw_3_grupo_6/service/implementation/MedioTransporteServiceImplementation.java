@@ -5,9 +5,9 @@ import java.util.List;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.example.ing_sw_3_grupo_6_sube.entity.MedioTransporte;
-import com.example.ing_sw_3_grupo_6_sube.repository.MedioTransporteRepository;
-import com.example.ing_sw_3_grupo_6_sube.service.MedioTransporteService;
+import com.unla.tp_ing_sw_3_grupo_6.entity.MedioTransporte;
+import com.unla.tp_ing_sw_3_grupo_6.repository.MedioTransporteRepository;
+import com.unla.tp_ing_sw_3_grupo_6.service.MedioTransporteService;
 
 @Service
 @Transactional(readOnly = true)

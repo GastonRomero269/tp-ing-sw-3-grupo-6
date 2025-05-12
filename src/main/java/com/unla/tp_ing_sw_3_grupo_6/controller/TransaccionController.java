@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.example.ing_sw_3_grupo_6_sube.entity.Transaccion;
-import com.example.ing_sw_3_grupo_6_sube.service.TransaccionService;
+import com.unla.tp_ing_sw_3_grupo_6.entity.Transaccion;
+import com.unla.tp_ing_sw_3_grupo_6.service.TransaccionService;
 
 @Controller
 @RequestMapping("/transacciones")
@@ -20,13 +20,13 @@ public class TransaccionController {
 	@GetMapping
 	public String listarTransacciones(Model model) {
 		model.addAttribute("transacciones", transaccionService.listarTodas());
-		return "transacciones/lista"; 
+		return "transacciones/lista";
 	}
 
 	@GetMapping("/nueva")
 	public String mostrarFormularioNuevaTransaccion(Model model) {
 		model.addAttribute("transaccion", new Transaccion());
-		return "transacciones/formulario"; 
+		return "transacciones/formulario";
 	}
 
 	@PostMapping

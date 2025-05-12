@@ -5,9 +5,9 @@ import java.util.List;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.example.ing_sw_3_grupo_6_sube.entity.Recarga;
-import com.example.ing_sw_3_grupo_6_sube.repository.RecargaRepository;
-import com.example.ing_sw_3_grupo_6_sube.service.RecargaService;
+import com.unla.tp_ing_sw_3_grupo_6.entity.Recarga;
+import com.unla.tp_ing_sw_3_grupo_6.repository.RecargaRepository;
+import com.unla.tp_ing_sw_3_grupo_6.service.RecargaService;
 
 @Service
 @Transactional(readOnly = true)

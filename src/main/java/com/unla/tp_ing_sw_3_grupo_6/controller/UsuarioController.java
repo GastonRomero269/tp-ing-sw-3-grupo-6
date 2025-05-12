@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.example.ing_sw_3_grupo_6_sube.entity.Usuario;
-import com.example.ing_sw_3_grupo_6_sube.service.UsuarioService;
+import com.unla.tp_ing_sw_3_grupo_6.entity.Usuario;
+import com.unla.tp_ing_sw_3_grupo_6.service.UsuarioService;
 
 @Controller
 @RequestMapping("/usuarios")
@@ -26,7 +26,7 @@ public class UsuarioController {
 	@GetMapping("/nuevo")
 	public String mostrarFormularioNuevoUsuario(Model model) {
 		model.addAttribute("usuario", new Usuario());
-		return "usuarios/formulario"; 
+		return "usuarios/formulario";
 	}
 
 	@PostMapping

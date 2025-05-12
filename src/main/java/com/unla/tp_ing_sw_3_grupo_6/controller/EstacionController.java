@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.example.ing_sw_3_grupo_6_sube.entity.Estacion;
-import com.example.ing_sw_3_grupo_6_sube.service.EstacionService;
+import com.unla.tp_ing_sw_3_grupo_6.entity.Estacion;
+import com.unla.tp_ing_sw_3_grupo_6.service.EstacionService;
 
 @Controller
 @RequestMapping("/estaciones")
@@ -20,13 +20,13 @@ public class EstacionController {
 	@GetMapping("/lista")
 	public String listarEstaciones(Model model) {
 		model.addAttribute("estaciones", estacionService.findAll());
-		return "estaciones/lista"; 
+		return "estaciones/lista";
 	}
 
 	@GetMapping("/nueva")
 	public String mostrarFormularioNuevaEstacion(Model model) {
 		model.addAttribute("estacion", new Estacion());
-		return "estaciones/formulario"; 
+		return "estaciones/formulario";
 	}
 
 	@PostMapping

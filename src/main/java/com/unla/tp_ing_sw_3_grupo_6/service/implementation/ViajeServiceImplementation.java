@@ -5,9 +5,9 @@ import java.util.List;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.example.ing_sw_3_grupo_6_sube.entity.Viaje;
-import com.example.ing_sw_3_grupo_6_sube.repository.ViajeRepository;
-import com.example.ing_sw_3_grupo_6_sube.service.ViajeService;
+import com.unla.tp_ing_sw_3_grupo_6.entity.Viaje;
+import com.unla.tp_ing_sw_3_grupo_6.repository.ViajeRepository;
+import com.unla.tp_ing_sw_3_grupo_6.service.ViajeService;
 
 @Service
 @Transactional(readOnly = true)

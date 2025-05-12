@@ -5,8 +5,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ModelAttribute;
 
-import com.example.ing_sw_3_grupo_6_sube.entity.Usuario;
-import com.example.ing_sw_3_grupo_6_sube.service.UsuarioService;
+import com.unla.tp_ing_sw_3_grupo_6.entity.Usuario;
+import com.unla.tp_ing_sw_3_grupo_6.service.UsuarioService;
 
 import jakarta.servlet.http.HttpSession;
 

@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.example.ing_sw_3_grupo_6_sube.entity.Viaje;
-import com.example.ing_sw_3_grupo_6_sube.service.ViajeService;
+import com.unla.tp_ing_sw_3_grupo_6.entity.Viaje;
+import com.unla.tp_ing_sw_3_grupo_6.service.ViajeService;
 
 @Controller
 @RequestMapping("/viajes")

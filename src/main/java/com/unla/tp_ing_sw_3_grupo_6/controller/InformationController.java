@@ -10,6 +10,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class InformationController {
 	@GetMapping("/conseguila")
 	public String listarEstaciones(Model model) {
-		return "informacion/conseguila"; 
+		return "informacion/conseguila";
 	}
 }

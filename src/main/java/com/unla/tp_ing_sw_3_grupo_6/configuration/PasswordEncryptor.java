@@ -4,7 +4,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
 
-import com.example.ing_sw_3_grupo_6_sube.service.UsuarioService;
+import com.unla.tp_ing_sw_3_grupo_6.service.UsuarioService;
 
 import jakarta.annotation.PostConstruct;
 

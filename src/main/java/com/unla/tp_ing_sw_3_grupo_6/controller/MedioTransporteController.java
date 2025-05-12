@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.example.ing_sw_3_grupo_6_sube.entity.MedioTransporte;
-import com.example.ing_sw_3_grupo_6_sube.service.MedioTransporteService;
+import com.unla.tp_ing_sw_3_grupo_6.entity.MedioTransporte;
+import com.unla.tp_ing_sw_3_grupo_6.service.MedioTransporteService;
 
 @Controller
 @RequestMapping("/medios-transportes")
@@ -27,7 +27,7 @@ public class MedioTransporteController {
 	@GetMapping("/nuevo")
 	public String mostrarFormularioNuevoMedioTransporte(Model model) {
 		model.addAttribute("medioTransporte", new MedioTransporte());
-		return "medios-transporte/formulario"; 
+		return "medios-transporte/formulario";
 	}
 
 	@PostMapping

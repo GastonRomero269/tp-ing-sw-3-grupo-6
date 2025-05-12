@@ -12,12 +12,12 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.example.ing_sw_3_grupo_6_sube.dto.TarjetaFormComprarDTO;
-import com.example.ing_sw_3_grupo_6_sube.dto.TarjetaFormDTO;
-import com.example.ing_sw_3_grupo_6_sube.entity.Tarjeta;
-import com.example.ing_sw_3_grupo_6_sube.entity.Usuario;
-import com.example.ing_sw_3_grupo_6_sube.service.TarjetaService;
-import com.example.ing_sw_3_grupo_6_sube.service.UsuarioService;
+import com.unla.tp_ing_sw_3_grupo_6.dto.TarjetaFormComprarDTO;
+import com.unla.tp_ing_sw_3_grupo_6.dto.TarjetaFormDTO;
+import com.unla.tp_ing_sw_3_grupo_6.entity.Tarjeta;
+import com.unla.tp_ing_sw_3_grupo_6.entity.Usuario;
+import com.unla.tp_ing_sw_3_grupo_6.service.TarjetaService;
+import com.unla.tp_ing_sw_3_grupo_6.service.UsuarioService;
 
 @Controller
 @RequestMapping("/tarjetas")
@@ -62,11 +62,11 @@ public class TarjetaController {
 		tarjeta.setFechaEmision(LocalDateTime.now());
 		tarjeta.setSaldo((double) 0);
 		tarjeta.setEstado("ACTIVA");
-		
+
 		Usuario usuario = usuarioService.findByDni(form.getDni());
 		tarjeta.setUsuario(usuario);
 		tarjetaService.crear(tarjeta);
-		
+
 		return "redirect:/";
 	}
 
@@ -100,7 +100,7 @@ public class TarjetaController {
 		tarjeta.setUsuario(usuario);
 
 		tarjetaService.crear(tarjeta);
-		
+
 		usuario.setTelefono(form.getTelefono());
 		usuarioService.crear(usuario);
 

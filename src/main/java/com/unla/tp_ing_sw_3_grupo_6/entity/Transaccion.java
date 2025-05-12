@@ -1,4 +1,4 @@
-	package com.unla.tp_ing_sw_3_grupo_6.entity;
+package com.unla.tp_ing_sw_3_grupo_6.entity;
 
 import java.time.LocalDateTime;
 

@@ -4,7 +4,7 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
-import com.example.ing_sw_3_grupo_6_sube.entity.Usuario;
+import com.unla.tp_ing_sw_3_grupo_6.entity.Usuario;
 
 public class UsuarioTest {
 
@@ -20,7 +20,7 @@ public class UsuarioTest {
 
 	@Test(expected = IllegalArgumentException.class)
 	public void testEmailInvalido() {
-		new Usuario("NOMBRE", "APELLIDO", "EMAIL-GMAIL_COM", "CONTRASENIA", null, "ROL", "TIPO_DNI",
-				1111111, "GENERO", "11 1111-1111");
+		new Usuario("NOMBRE", "APELLIDO", "EMAIL-GMAIL_COM", "CONTRASENIA", null, "ROL", "TIPO_DNI", 1111111, "GENERO",
+				"11 1111-1111");
 	}
 }

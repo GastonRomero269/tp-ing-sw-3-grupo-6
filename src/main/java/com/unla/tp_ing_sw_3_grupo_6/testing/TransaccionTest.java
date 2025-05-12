@@ -6,7 +6,7 @@ import java.time.LocalDateTime;
 
 import org.junit.Test;
 
-import com.example.ing_sw_3_grupo_6_sube.entity.Transaccion;
+import com.unla.tp_ing_sw_3_grupo_6.entity.Transaccion;
 
 public class TransaccionTest {
 
